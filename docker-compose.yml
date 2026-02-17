@@ -3,9 +3,9 @@ version: "3.9"
 services:
   qbitx:
     platform: linux/amd64
-    image: ghcr.io/artschekoff/qbitx
+    image: ghcr.io/artschekoff/qbit-docker
     build: .
-    container_name: qbitx
+    container_name: qbit-docker
     restart: unless-stopped
     ports:
       - "8334:8334"

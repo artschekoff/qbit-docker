@@ -1,4 +1,4 @@
-# QbitX Node in Docker
+# qbit-docker
 
 ![QbitX visual](readme/quantum-bitcoin-post.png)
 

@@ -1,4 +1,4 @@
-IMAGE ?= ghcr.io/artschekoff/qbitx
+IMAGE ?= ghcr.io/artschekoff/qbit-docker
 TAG ?= latest
 PLATFORM ?= linux/amd64
 PLATFORM_AMD64 ?= linux/amd64
