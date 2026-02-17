@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  qbitx:
+    platform: linux/amd64
+    image: ghcr.io/artschekoff/qbitx
+    build: .
+    container_name: qbitx
+    restart: unless-stopped
+    ports:
+      - "8334:8334"
+      - "8332:8332"
+    volumes:
+      - ./data:/root/.qbitx
+    healthcheck:
+      test: ["CMD", "pgrep", "qbitx"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  qbitx-data:
+    driver: local
