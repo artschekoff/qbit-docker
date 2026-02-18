@@ -4,6 +4,7 @@ services:
   qbitx:
     platform: linux/amd64
     image: ghcr.io/artschekoff/qbit-docker
+    pull_policy: always
     build: .
     container_name: qbit-docker
     restart: unless-stopped
